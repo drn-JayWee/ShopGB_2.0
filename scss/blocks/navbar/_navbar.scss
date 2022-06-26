@@ -1,0 +1,116 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	height: 3rem;
+
+	&__menu {
+		max-width: 72rem;
+		width: 100%;
+		margin: 0.5rem auto;
+		padding: 0 2rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+	}
+
+	&__navigation {
+		width: 150px;
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	&__BandB {
+		display: flex;
+		align-items: center;
+	}
+
+	&__basket {
+		margin-right: 2rem;
+	}
+	
+	&__burger {
+		height: 4rem;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__bar {
+		width: 1.9rem;
+		height: 1.5px;
+		border-radius: 2px;
+		background-color: #eee;
+		transition: 0.5s;
+		position: relative;
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			width: inherit;
+			height: inherit;
+			background-color: #eee;
+			transition: 0.5s;
+		}
+
+		&:before {
+			transform: translateY(-9px);
+		}
+
+		&:after {
+			transform: translateY(9px);
+		}
+	}
+}
+
+
+
+.container.active .navbar__bar {
+	transform: rotate(360deg);
+	background-color: transparent;
+}
+
+.container.active .navbar__bar:before {
+	transform: translateY(0) rotate(45deg);
+	background-color: $accent;
+}
+
+.container.active .navbar__bar:after {
+	transform: translateY(0) rotate(-45deg);
+	background-color: $accent;
+}
+
+.container.active .main {
+	animation: main-animation 0.5s ease;
+	cursor: pointer;
+	transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
+
+@keyframes main-animation {
+	from {
+		transform: translate(0);
+	}
+
+	to {
+		transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

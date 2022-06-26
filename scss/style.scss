@@ -1,0 +1,22 @@
+@import './general';
+@import './mixin';
+@import './resert';
+@import './variables';
+
+
+//===== Navbar --------------------
+
+@import './blocks/navbar/navbar';
+
+//===== Header --------------------
+
+//===== Index ---------------------
+
+@import './blocks/index/brand';
+@import './blocks/index/header';
+
+//===== Footer --------------------
+
+// @import './blocks/footer/footer';
+// @import './blocks/footer/infoblock';
+// @import './blocks/footer/social';
