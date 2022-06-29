@@ -8,12 +8,17 @@
 
 @import './blocks/navbar/navbar';
 
-//===== Header --------------------
-
 //===== Index ---------------------
 
 @import './blocks/index/brand';
 @import './blocks/index/header';
+
+//===== Catalog --------------------
+
+@import './blocks/catalog/header';
+@import './blocks/catalog/product';
+@import './blocks/catalog/aside';
+@import './blocks/catalog/card'
 
 //===== Footer --------------------
 

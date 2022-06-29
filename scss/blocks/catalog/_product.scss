@@ -1,0 +1,29 @@
+.catalog {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product {
+	width: 1150px;
+	display: block;
+	box-sizing: border-box;
+
+	&__info {
+		padding-bottom: 1rem;
+	}
+
+	&__title {
+		color: $text;
+		text-align: center;
+		font-family:'Times New Roman', Times, serif;
+		font-size: 2.5rem;
+
+	}
+
+	&__text {
+		color: $text-light;
+		text-align: center;
+        font-family:'Times New Roman', Times, serif;
+	}
+}
