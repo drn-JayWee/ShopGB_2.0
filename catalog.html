@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- <link rel="stylesheet" href="/libs/bootstrap/"> -->
 
 </head>
@@ -42,149 +42,64 @@
 				<div class="main">
 					<header class="header">
 						<div class="overlay">
-							<div class="catalog"> 
-								<aside> 
-									<ul class="aside focus-in-expand-fwd">
-										<h3><a class="aside__title focus-in-expand-fwd" href="#">MENU</a></h3>
+
+<!-- ============================= CATALOG MENU ============================= -->
+
+							<div class="catalog">
+
+								<aside>
+									<ul class="menu focus-in-expand-fwd">
+										<li class="menu__item">
+											<a class="menu__navigation focus-in-expand-fwd" href="catalog.html">MENU</a>
+										</li>
 										<ul>
-											<li class="aside__list focus-in-expand-fwd">Accessories</li>
-											<li class="aside__list focus-in-expand-fwd">Bags</li>
-											<li class="aside__list focus-in-expand-fwd">T-Shirts</li>
+											<li>
+												<a class="menu__items focus-in-expand-fwd" href="catalogMan.html">Man</a>
+											</li>
+											<li class="menu__list focus-in-expand-fwd">Accessories</li>
+											<li class="menu__list focus-in-expand-fwd">Bags</li>
+											<li class="menu__list focus-in-expand-fwd">T-Shirts</li>
 										</ul>
-										<h3><a class="aside__title focus-in-expand-fwd" href="#">WOMAN</a></h3>
 										<ul>
-											<li class="aside__list focus-in-expand-fwd">Accessories</li>
-											<li class="aside__list focus-in-expand-fwd">Jackets & Coats/li>
-											<li class="aside__list focus-in-expand-fwd">Polos</li>
-											<li class="aside__list focus-in-expand-fwd">T-Shirts</li>
-											<li class="aside__list focus-in-expand-fwd">Shirts</li>
+											<li>
+												<a class="menu__items focus-in-expand-fwd" href="catalogWoman.html">Woman</a>
+											</li>
+											<li class="menu__list focus-in-expand-fwd">Accessories</li>
+											<li class="menu__list focus-in-expand-fwd">Jackets & Coats/li>
+											<li class="menu__list focus-in-expand-fwd">Polos</li>
+											<li class="menu__list focus-in-expand-fwd">T-Shirts</li>
+											<li class="menu__list focus-in-expand-fwd">Shirts</li>
 										</ul>
-										<h3><a class="aside__title focus-in-expand-fwd" href="#">KIDS</a></h3>
-										<ul>
-											<li class="aside__list focus-in-expand-fwd">Accessories</li>
-											<li class="aside__list focus-in-expand-fwd">Jackets & Coats</li>
-											<li class="aside__list focus-in-expand-fwd">Polos</li>
-											<li class="aside__list focus-in-expand-fwd">T-Shirts</li>
-											<li class="aside__list focus-in-expand-fwd">Shirts</li>
-											<li class="aside__list focus-in-expand-fwd">Bags</li>
+
+<!-- ============================= CATALOG MENU DROPDOWN ============================= -->
+
+										<ul class="menu-dropdown">
+											<menu>
+												<menuitem class="menu__popup">
+												<p class="menu__items focus-in-expand-fwd">Kids</p>
+												<menu>
+													<menuitem><a href="index.html">Accessories</a></menuitem>
+													<menuitem><a href="#">Jackets & Coatsy</a></menuitem>
+													<menuitem><a href="#">Polos</a></menuitem>
+													<menuitem><a href="#">T-Shirts</a></menuitem>
+													<menuitem><a href="#">Shirts</a></menuitem>
+													<menuitem><a href="#">Bags</a></menuitem>
+												</menu>
 										</ul>
 									</ul>
 								</aside>
 
+<!-- ============================= CATALOG TITLE ============================= -->
+
 								<div class="product">
 									<div class="product__info">
-										<h2 class="product__title">Fetured Items</h2>
-										<p class="product__text">Shop for items based on what we featured in this week</p>
+										<h2 class="product__title"></h2>
+										<p class="product__text">
+										</p>
 									</div>
-									<div class="card-box">
-										<div class="card">
-											<div class="card__content">
-												<img class="card__img" src="./images/catalog/catalogBrand1.jpg" alt="catalogBrandPhoto">
-												<h3 class="card__title">Lorem, ipsum dolor.</h3>
-												<div class="card__body">
-													<div class="card__star">
-														<span class="rating-value">4.9</span>
-														<span class="star">&#9733</span>
-													</div>
-													<p class="card__price">99$</p>
-												</div>
-												<div class="card__footer">
-													<button class="btn btn-success">Buy Now</button>
-													<button class="btn btn-border">Add to card</button>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card__content">
-												<img class="card__img" src="./images/catalog/catalogBrand1.jpg" alt="catalogBrandPhoto">
-												<h3 class="card__title">Lorem, ipsum dolor.</h3>
-												<div class="card__body">
-													<div class="card__star">
-														<span class="rating-value">4.5</span>
-														<span class="star">&#9733</span>
-													</div>
-													<p class="card__price">99$</p>
-												</div>
-												<div class="card__footer">
-													<button class="btn btn-success">Buy Now</button>
-													<button class="btn btn-border">Add to card</button>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card__content">
-												<img class="card__img" src="./images/catalog/catalogBrand1.jpg" alt="catalogBrandPhoto">
-												<h3 class="card__title">Lorem, ipsum dolor.</h3>
-												<div class="card__body">
-													<div class="card__star">
-														<span class="rating-value">4.7</span>
-														<span class="star">&#9733</span>
-													</div>
-													<p class="card__price">99$</p>
-												</div>
-												<div class="card__footer">
-													<button class="btn btn-success">Buy Now</button>
-													<button class="btn btn-border">Add to card</button>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card__content">
-												<img class="card__img" src="./images/catalog/catalogBrand1.jpg" alt="catalogBrandPhoto">
-												<h3 class="card__title">Lorem, ipsum dolor.</h3>
-												<div class="card__body">
-													<div class="card__star">
-														<span class="rating-value">4.9</span>
-														<span class="star">&#9733</span>
-													</div>
-													<p class="card__price">99$</p>
-												</div>
-												<div class="card__footer">
-													<button class="btn btn-success">Buy Now</button>
-													<button class="btn btn-border">Add to card</button>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card__content">
-												<img class="card__img" src="./images/catalog/catalogBrand1.jpg" alt="catalogBrandPhoto">
-												<h3 class="card__title">Lorem, ipsum dolor.</h3>
-												<div class="card__body">
-													<div class="card__star">
-														<span class="rating-value">4.8</span>
-														<span class="star">&#9733</span>
-													</div>
-													<p class="card__price">99$</p>
-												</div>
-												<div class="card__footer">
-													<button class="btn btn-success">Buy Now</button>
-													<button class="btn btn-border">Add to card</button>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card__content">
-												<img class="card__img" src="./images/catalog/catalogBrand1.jpg" alt="catalogBrandPhoto">
-												<h3 class="card__title">Lorem, ipsum dolor.</h3>
-												<div class="card__body">
-													<div class="card__star">
-														<span class="rating-value">4.4</span>
-														<span class="star">&#9733</span>
-													</div>
-													<p class="card__price">99$</p>
-												</div>
-												<div class="card__footer">
-													<button class="btn btn-success">Buy Now</button>
-													<button class="btn btn-border">Add to card</button>
-												</div>
-											</div>
-										</div>
 
-						
-									</div>
-								</div>
-							</div>
-						</div>
+<!-------------------------------------------------------------------------------------------------------- -->
+
 					</header>
 				</div>
 				<div class="shadow one"></div>
@@ -197,7 +112,7 @@
 						<a href="index.html" style="--i: 0.05s;">Home</a>
 					</li>
 					<li>
-						<a href="catalog.html" style="--i: 0.1s;">Product</a>
+						<a href="catalog.html" style="--i: 0.1s;">Catalog</a>
 					</li>
 					<li>
 						<a href="cart.html" style="--i: 0.15s;">Cart</a>

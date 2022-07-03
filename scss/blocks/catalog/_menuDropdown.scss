@@ -1,0 +1,69 @@
+.menu-dropdown menuitem {
+	position: relative;
+	display: block;
+	// opacity: 0;
+	cursor: pointer;
+}
+
+
+.menu-dropdown menuitem>menu {
+	position: absolute;
+	pointer-events: none;
+
+}
+
+.menu-dropdown>menu>menuitem {
+	pointer-events: all;
+	opacity: 1;
+}
+
+menu menuitem a {
+	white-space: nowrap;
+	display: block;
+}
+
+
+// общий фон
+menuitem:hover>menu {
+	pointer-events: initial;
+}
+
+// фон элемента
+menuitem:hover>menu>menuitem,
+menu:hover>menuitem {
+	opacity: 1;
+}
+
+
+// Стилизация меню
+.menu-dropdown a {
+	position: relative;
+	color: whitesmoke;
+	font-family: 'Raleway-Regular';
+	font-size: small;
+	font-style: italic;
+	padding: 1rem 2rem;
+	margin-bottom: .5rem;
+	box-sizing: border-box;
+	box-shadow: rgb(0 0 0 / 30%) 1rem 1.5rem 0.6rem;
+	text-decoration: none;
+	transition: background 0.5s, color 0.5s, transform 0.5s;
+}
+
+.menu-dropdown a:hover:before {
+	content: '';
+	position: absolute;
+}
+
+
+.menu-dropdown>menu>menuitem>menu>menuitem {
+	transition: transform 0.6s, opacity 0.6s;
+	transform: translateY(150%);
+	// opacity: 0;
+}
+
+.menu-dropdown>menu>menuitem:hover>menu>menuitem,
+.menu-dropdown>menu>menuitem.hover>menu>menuitem {
+	transform: translateY(0%);
+	opacity: 1;
+}

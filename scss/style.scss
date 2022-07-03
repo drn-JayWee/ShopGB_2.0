@@ -10,18 +10,20 @@
 
 //===== Index ---------------------
 
-@import './blocks/index/brand';
 @import './blocks/index/header';
+@import './blocks/index/brand';
 
 //===== Catalog --------------------
 
 @import './blocks/catalog/header';
 @import './blocks/catalog/product';
-@import './blocks/catalog/aside';
-@import './blocks/catalog/card'
+@import './blocks/catalog/menu';
+@import './blocks/catalog/menuDropdown';
+@import './blocks/catalog/card';
 
 //===== Footer --------------------
 
-// @import './blocks/footer/footer';
-// @import './blocks/footer/infoblock';
-// @import './blocks/footer/social';
+
+//===== Botton --------------------
+
+@import './blocks/button/botton';

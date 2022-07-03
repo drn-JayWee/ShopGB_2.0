@@ -13,7 +13,7 @@ header {
 	min-height: 100vh;
 	width: 100%;
 	background: linear-gradient(180deg, rgb(255 255 255 / 0%) 39%, rgb(43, 51, 59, 0.8) 96%) center center/100% 100vh no-repeat,
-	url('/images/index/brand.jpg') no-repeat center / cover;
+	url(/brand.jpg) no-repeat center / cover;
 	position: relative;
 }
 
@@ -40,6 +40,10 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	&__style {
+		font-family: 'Raleway-Regular';
+	}
 }
 
 
@@ -49,10 +53,8 @@ header {
 	color: #eee;
 	padding: 0.7rem 0;
 	display: inline-block;
-	font-size: 1rem;
-	font-weight: 300;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+    letter-spacing: .2rem;
 	transition: $transition;
 	opacity: 0;
 	transform: translateY(10px);
@@ -61,7 +63,6 @@ header {
 	&:hover {
 		color: #f0314b;
 	}
-	
 }
 
 
